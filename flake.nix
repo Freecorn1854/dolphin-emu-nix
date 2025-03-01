@@ -11,7 +11,8 @@
       submodules = true;
       flake = false;
     };
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # build aganst 24.11 instead of unstable to fix possible dept issues!
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
   outputs = inputs@{ self, nixpkgs, flake-parts, dolphin-emu-src }:
