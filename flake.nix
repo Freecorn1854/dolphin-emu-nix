@@ -1,8 +1,8 @@
 {
   description = "A Flake for the Dolphin Gamecube Emulator";
   nixConfig = {
-    extra-substituters = [ "https://matthewcroughan.cachix.org" ];
-    extra-trusted-public-keys = [ "matthewcroughan.cachix.org-1:fON2C9BdzJlp1qPan4t5AF0xlnx8sB0ghZf8VDo7+e8=" ];
+#    extra-substituters = [ "https://matthewcroughan.cachix.org" ];
+#    extra-trusted-public-keys = [ "matthewcroughan.cachix.org-1:fON2C9BdzJlp1qPan4t5AF0xlnx8sB0ghZf8VDo7+e8=" ];
   };
   inputs = {
     dolphin-emu-src = {
