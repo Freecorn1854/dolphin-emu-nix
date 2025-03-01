@@ -30,7 +30,7 @@
       perSystem = { config, self', inputs', pkgs, system, ... }: {
         packages = rec {
           default = dolphin-emu;
-          dolphin-emu = pkgs.dolphinEmuMaster.overrideAttrs (old: {
+          dolphin-emu = pkgs.dolphin-emu-beta.overrideAttrs (old: {
             meta.mainProgram = "dolphin-emu";
             src = dolphin-emu-src;
             version = dolphin-emu-src.rev;
